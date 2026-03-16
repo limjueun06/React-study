@@ -27,8 +27,7 @@ function AppExample (){
     sesason = "여름"
   } else if (month>=9 && month <= 11){
     season = "가을"
-  }
-  else {
+  } else {
     season = "겨울"
   }
 

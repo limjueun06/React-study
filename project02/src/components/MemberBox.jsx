@@ -1,7 +1,7 @@
 // rafce + ENTER
 // => 단축키로 구조 가져오기
 
-/* import React from 'react'
+import React from 'react'
 
 const MemberBox = ({teamName, name, blood}) => {
   return (
@@ -12,8 +12,9 @@ const MemberBox = ({teamName, name, blood}) => {
   )
 }
 
-export default MemberBox */
+export default MemberBox
 
+/* 수업시간에 내가 작성한코드 
 
 function MemberBox({teamName, name, blood}){
 
@@ -29,6 +30,10 @@ function MemberBox({teamName, name, blood}){
 
 // 3. export문
 export default MemberBox
+
+*/
+
+
 
 
 
