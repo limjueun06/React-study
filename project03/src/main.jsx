@@ -11,7 +11,7 @@ import { createRoot } from 'react-dom/client'
 // import App from './example/Ex03'
 
 // 4. useState 실습 (주사위게임)
- import App from './example/Ex04'
+// import App from './example/Ex04'
 
 // ====================================================
 
@@ -19,7 +19,7 @@ import { createRoot } from 'react-dom/client'
 // import App from './example/Ex05'
    
 // 6. filter함수
-//   import App from './example/Ex06'
+   import App from './example/Ex06'
 
 // ==================================================== 영표샘
 

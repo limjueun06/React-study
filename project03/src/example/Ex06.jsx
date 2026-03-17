@@ -37,13 +37,26 @@ const Ex06 = () => {
     <div>
         <h3>아래목록 인원은 음주와 흡연이 가능합니다.</h3>
         {adult.map(item => <p key={item.name}>{item.name}</p>)}
+        
         <hr></hr>
-        <div style={{border:'2px solid red', backgroundColor:'#ffd6d6', padding:'10px', borderRadius:'10px'}}>
-            <h3>아래목록은 혈액형이 A형 입니다.</h3>
-            {aType.map(item => <p>{item.name}</p>)}
-        </div>
+        
+        <table border={1}>
+        <tbody>
+            <tr>
+                <th>이름</th>
+                <th>혈액형</th>
+            </tr>
+
+            {aType.map(item => <tr key={item.name}>
+                <td>{item.name}</td>
+                <td>{item.bloodType}</td>
+            </tr>)}
+
+        </tbody>
+        </table>
     </div>
   )
 }
 
 export default Ex06
+

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Ex05LuchBox = ({menu}) => {
+const Ex05LunchBox = ({menu}) => {
   return (
       <div style={{border : '2px solid skyblue', padding : '2%', borderRadius : '10px'}}>
         <p>
@@ -10,4 +10,4 @@ const Ex05LuchBox = ({menu}) => {
   )
 }
 
-export default Ex05LuchBox
+export default Ex05LunchBox

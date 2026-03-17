@@ -1,6 +1,6 @@
 import React from 'react'
 import Ex05Box from '../components/Ex05Box'
-import Ex05LuchBox from '../components/Ex05LunchBox'
+import Ex05LunchBox from '../components/Ex05LunchBox'
 
 
 const Ex05 = () => {
@@ -22,11 +22,13 @@ const Ex05 = () => {
     //   - 바뀔 부분은 선생님들의 이름! => 배열화
     let trList = ['강규남', '선영표', '임다이', '채수민']
     let renderTr = trList.map(item => <Ex05Box key={item} tr={item}></Ex05Box>)
+    // ============================================================================================
 
 
     // 실습 (점심메뉴 선택란 만들기)
     let menuList = ['짜장면', '짬뽕', '탕수육', '깐풍새우']
-    let renderMenu = menuList.map(item => <Ex05LuchBox key={item} menu={item}></Ex05LuchBox>)
+    let renderMenu = menuList.map(item => <Ex05LunchBox key={item} menu={item}></Ex05LunchBox>)
+    // ============================================================================================
 
 
     // ★보통은 배열안에 객체가 들어있는 경우 map을 활용하기 좋다★
