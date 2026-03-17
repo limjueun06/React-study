@@ -16,27 +16,46 @@ const Ex04 = () => {
     
     const [myDice, setMyDice] = useState(1)
     const [comDice, setComDice] = useState(1)
+    const [result, setResult] = useState('게임 전')
 
+    // random한 숫자를 뽑아내는 자판기
+    const makeRandom = ()=>{
+        return parseInt(Math.random()*6)+1
+    } 
+
+    // 던지기 버튼 눌렀을때 실행 할 throwDice 함수
     const throwDice = ()=>{
-        setMyDice(parseInt(Math.random()*6)+1)
-        setComDice(parseInt(Math.random()*6)+1)
-    }
+        console.log('던지기', makeRandom())
+        setMyDice(makeRandom())
+        setComDice(makeRandom())
 
+        if(myDice === comDice){
+            setResult('동점')
+        } else if (myDice > comDice){
+            setResult('승리')
+        } else {
+            setResult('패배..')
+        }
+    }
+    // 초기화 버튼 만들기
+    const resetDice = ()=>{
+        setMyDice(1)
+        setComDice(1)
+    }
 
   return (
     <div>
         <h1>주사위게임</h1>
         <button onClick={throwDice}>던지기</button>
-        <button>초기화</button>
+        <button onClick={resetDice}>초기화</button>
 
         <hr></hr>
         <div style={{display : 'flex'}}>
-        <Ex04Box dice={myDice}></Ex04Box>
-        <Ex04Box dice={comDice}></Ex04Box>
+        <Ex04Box name='나' dice={myDice}></Ex04Box>
+        <Ex04Box name='컴퓨터' dice={comDice}></Ex04Box>
         </div>
 
-        <h2>결과</h2>
-        
+        <h2>{result}</h2>
     </div>
   )
 }

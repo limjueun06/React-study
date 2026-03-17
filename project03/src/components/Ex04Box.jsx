@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Ex04Box = () => {
+const Ex04Box = ({name, dice}) => {
   return (
     <div>
-        <h3>나</h3>
-        <img src={`/img/dice1.png`}></img>
+        <h3>{name}</h3>
+        <img src={`/img/dice${dice}.png`}></img>
     </div>
   )
 }
