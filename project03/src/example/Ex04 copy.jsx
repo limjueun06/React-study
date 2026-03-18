@@ -26,13 +26,13 @@ const Ex04 = () => {
     } 
 
     // 더 높은 결과에 따라 스코어 변화
-    useEffect(()=>{
-        if(myDice > comDice){
-            setMyScore(myScore+1)
-        } else if(myDice < comDice){
-            setComScore(comScore+1)
-        }
-    }, [myDice, comDice])
+    // useEffect(()=>{
+    //     if(myDice > comDice){
+    //         setMyScore(myScore+1)
+    //     } else if(myDice < comDice){
+    //         setComScore(comScore+1)
+    //     }
+    // }, [myDice, comDice])
 
 
     // score값이 먼저 10이 된값에 대해 결과출력
@@ -45,22 +45,32 @@ const Ex04 = () => {
     }, [myScore, comScore])
 
 
-    // 주사위 눈에 따라 동점,승리,패배 결과
-    useEffect(()=>{
-        if(myDice === comDice){
+    // 던지기 버튼 눌렀을때 실행 할 throwDice 함수
+    const throwDice = ()=>{
+        console.log('던지기', makeRandom())
+
+        // 일반변수에 담아서 확인하는방법
+        let myRan = makeRandom()
+        let comRan = makeRandom()
+        setMyDice(myRan)
+        setComDice(comRan)
+
+        if(myRan>comRan){
+            setMyScore(myScore+1)
+        } else if(comRan>myRan){
+            setComScore(comScore+1)
+        }
+
+        
+        // 주사위 눈에 따라 동점,승리,패배 결과
+        if(myRan === comRan){
             setResult('동점')
-        } else if (myDice > comDice){
+        } else if (myRan > comRan){
             setResult('승리')
         } else {
             setResult('패배..')
         }
-    }, [myDice, comDice])
-
-    // 던지기 버튼 눌렀을때 실행 할 throwDice 함수
-    const throwDice = ()=>{
-        console.log('던지기', makeRandom())
-        setMyDice(makeRandom())
-        setComDice(makeRandom())
+        
     }
 
     
