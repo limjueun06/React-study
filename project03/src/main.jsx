@@ -9,6 +9,8 @@ import { createRoot } from 'react-dom/client'
 
 // 3. useState 실습 (랜덤게임)
 // import App from './example/Ex03'
+// import App from './example/Ex03 copy'
+// import App from './example/Ex03 copy 2'
 
 // 4. useState 실습 (주사위게임)
 // import App from './example/Ex04'
@@ -26,7 +28,7 @@ import { createRoot } from 'react-dom/client'
 
 // 7. useEffect개념
 // import App from './example/Ex07'
- import App from './example/Ex07 copy'
+// import App from './example/Ex07 copy'
 
 // 8. 클래스 컴포넌트 구조
 // import App from './example/Ex08'

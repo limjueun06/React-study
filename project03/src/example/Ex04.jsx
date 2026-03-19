@@ -56,13 +56,14 @@ const Ex04 = () => {
         }
     }, [myDice, comDice])
 
+
     // 던지기 버튼 눌렀을때 실행 할 throwDice 함수
     const throwDice = ()=>{
         console.log('던지기', makeRandom())
         setMyDice(makeRandom())
         setComDice(makeRandom())
     }
-
+ 
     
     // 초기화 버튼 만들기
     const resetDice = ()=>{
