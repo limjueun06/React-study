@@ -43,16 +43,14 @@ const Login = () => {
       }
     })
     .then((res)=>{
-      // res : 통신성공시 응답받은 데이터
-      console.log(res)
+      console.log(res)  // res : 통신성공시 응답받은 데이터
+
 
       if(res.data == 1){
         nav('/')
       } else {
         alert('로그인실패')
       }
-
-      console.log('Node서버 통신완료')
     })
 
 

@@ -9,7 +9,7 @@ import { createRoot } from 'react-dom/client'
 
 // 3. useState 실습 (랜덤게임)
 // import App from './example/Ex03'
- import App from './example/Ex03 copy'
+// import App from './example/Ex03 copy'
 // import App from './example/Ex03 copy 2'
 
 // 4. useState 실습 (주사위게임)
@@ -19,7 +19,7 @@ import { createRoot } from 'react-dom/client'
 // ====================================================
 
 // 5. map 함수
-// import App from './example/Ex05'
+ import App from './example/Ex05'
    
 // 6. filter함수
 // import App from './example/Ex06'
